@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIVID SHOP</title>
+    <meta name="keyword" content="검색어, 검색어">
+    <meta name="description" content="웹사이트설명">
+    <link rel="shortcut icon" href="./images/favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/shop.js"></script>
+</head>
+<body>
+    <!-- top -->
+    <div class="top">
+        <div class="container relative">
+            <div class="top_notice_item">
+                <div class="slick_notice">
+                    <a href="#">첫 번째 공지사항입니다.</a><span>(2022. 11. 14)</span>
+                </div>
+                <div class="slick_notice">
+                    <a href="#">두 번째 공지사항입니다. 두 번째 공지사항입니다.</a><span>(2022. 11. 15)</span>
+                </div>
+                <div class="slick_notice">
+                    <a href="#">세 번째 공지사항입니다.</a><span>(2022. 11. 16)</span>
+                </div>
+            </div>
+            <div class="language-button absolute">
+                <span>KOR</span><i class="fa-solid fa-caret-down"></i>
+                <ul class="language-select absolute">
+                    <li data-value="KOR">KOR</li>
+                    <li data-value="ENG">ENG</li>
+                    <li data-value="JP">JP</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- /top -->
+    <header class="container">
+        <div class="row justify-content-center align-items-center">
+            <a href="./index.html" class="logo"><img src="images/logo.png" alt="shop-logo"></a>
+            <nav>
+                <ul class="gnb d-flex">
+                    <li><a href="#" class="red bold">오늘의특가</a></li>
+                    <li><a href="#" class="blue bold">신상</a></li>
+                    <li><a href="#">1+1특가</a></li>
+                    <li><a href="#">우먼</a>
+                        <div class="lnb">
+                            <a href="#">원피스/정장</a>
+                            <a href="#">상의</a>
+                            <a href="#">하의</a>
+                            <a href="#">아우터</a>
+                            <a href="#">마담의류</a>
+                            <a href="#">시즌/테마의류</a>
+                        </div>
+                    </li>
+                    <li><a href="#">맨즈</a>
+                        <div class="lnb">
+                            <a href="#">상의</a>
+                            <a href="#">하의</a>
+                            <a href="#">아우터</a>
+                            <a href="#">남성빅사이즈</a>
+                            <a href="#">남성정장</a>
+                            <a href="#">시즌/테마의류</a>
+                        </div>
+                    </li>
+                    <li><a href="#">키즈</a>
+                        <div class="lnb">
+                            <a href="#">상의</a>
+                            <a href="#">하의</a>
+                            <a href="#">아우터</a>
+                            <a href="#">키즈정장</a>
+                            <a href="#">시즌/테마의류</a>
+                        </div>
+                    </li>
+                    <li><a href="#">슈즈</a>
+                        <div class="lnb">
+                            <a href="#">여성화</a>
+                            <a href="#">남성화</a>
+                            <a href="#">운동화</a>
+                            <a href="#">슬리퍼</a>
+                            <a href="#">기능화</a>
+                        </div>
+                    </li>
+                    <li><a href="#">용품</a></li>
+                    <li><a href="#">아울렛</a></li>
+                    <li><a href="#">커뮤니티</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <a href="#" class="search"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="#" class="cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span>0</span>
+                </a>
+                <a href="#"><i class="fa-solid fa-user"></i></a>
+            </nav>
+        </div>
+        <div class="searchbox">
+            <div class="closebox">
+                <a href="#" class="close"><i class="fa-solid fa-xmark"></i></a>
+            </div>
+            <h1>검색</h1>
+            <form name="searchform" class="searchform">
+                <input type="search" name="search" id="search">
+                <button type="submit" class="btn-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            <div class="hash">
+                <h2>인기 검색어</h2>
+                <span>조끼</span>
+                <span>기모</span>
+                <span>부츠컷</span>
+                <span>바람막이</span>
+                <span>모자</span>
+                <span>잘나가는상품</span>
+                <span>아아스페더</span>
+            </div>
+            <div class="color">
+                <h2>인기 컬러</h2>
+                <div class="d-flex flex-flow text-center">
+                    <div class="col-2">
+                        <span class="black" data-color="블랙"></span><p>블랙</p>
+                    </div>
+                    <div class="col-2">
+                        <span class="white" data-color="화이트"></span><p>화이트</p>
+                    </div>
+                    <div class="col-2">
+                        <span class="gray" data-color="그레이"></span><p>그레이</p>
+                    </div>
+                    <div class="col-2">
+                        <span class="navy" data-color="네이비"></span><p>네이비</p>
+                    </div>
+                    <div class="col-2">
+                        <span class="pink" data-color="핑크"></span><p>핑크</p>
+                    </div>
+                    <div class="col-2">
+                        <span class="yellow" data-color="옐로우"></span><p>옐로우</p>
+                    </div>
+                    <div class="col-2">
+                        <span class="cblue" data-color="블루"></span><p>블루</p>
+                    </div>
+                    <div class="col-2">
+                        <span class="green" data-color="그린"></span><p>그린</p>
+                    </div>
+                    <div class="col-2">
+                        <span class="beige" data-color="베이지"></span><p>베이지</p>
+                    </div>
+                    <div class="col-2">
+                        <span class="orange" data-color="오렌지"></span><p>오렌지</p>
+                    </div>
+                    <div class="col-2">
+                        <span class="cred" data-color="레드"></span><p>레드</p>
+                    </div>
+                    <div class="col-2">
+                        <span class="purple" data-color="퍼플"></span><p>퍼플</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="container login">
+        <img src="images/logo.png" alt="shop-logo">
+        <div class="login-box">
+            <h1 class="login-text">로그인</h1>
+            <ul class="login-tab">
+                <li class="active"><a href="#">회원</a>
+                    <div class="tab member">
+                        <form>
+                            <input type="text" id="userid" name="userid" placeholder="아이디">
+                            <input type="password" id="pw" name="pw" placeholder="비밀번호">
+                            <button type="submit">로그인</button>
+                            <div class="act-box">
+                                <div class="savebox">
+                                    <input type="checkbox" id="id-save">
+                                    <label for="id-save"> 아이디 저장</label>
+                                </div>
+                                <div class="social-link">
+                                    <a href="#">아이디 찾기</a>
+                                    <span></span>
+                                    <a href="#">비밀번호 찾기</a>
+                                    <span></span>
+                                    <a href="#">회원가입</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </li>
+                <li><a href="#">비회원 주문조회</a>
+                    <div class="tab none">
+                        <form>
+                            <input type="text" id="name" name="name" placeholder="주문자명">
+                            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" placeholder="휴대폰 번호('-'없이 입력)">
+                            <input type="password" id="orderpw" name="orderpw" placeholder="주문비밀번호">
+                            <button type="submit">주문내역 조회하기</button>
+                            <div class="act-box">
+                                <div class="social-link">
+                                    <a href="#">주문 비밀번호 찾기</a>
+                                    <span></span>
+                                    <a href="#">비밀번호 찾기</a>
+                                    <span></span>
+                                    <a href="#">회원가입</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="f-menu">
+                        <a href="#" class="f-logo"><img src="./images/logo.png" alt="logo"></a>
+                        <a href="#">브랜드 스토리</a>
+                        <span></span>
+                        <a href="#">회사소개</a>
+                        <span></span>
+                        <a href="#">이용약관</a>
+                        <span></span>
+                        <a href="#">개인정보처리방침</a>
+                        <span></span>
+                        <a href="#">고객센터</a>
+                    </div>
+                    <div class="copy">
+                        <p>사업자명 : (주)VIVID <span></span> 대표자 : 홍길동 <span></span> 팩스번호 031-0000-0000</p>
+                        <p>주소 : 경기도 김포시 김포한강로 4길(장항동) 이젠타워 10층 1004호</p>
+                        <p>사업자 등록번호 000-0000-0000 <span></span> 통산판매업신고 : 20122-김포-12299</p>
+                        <p>제휴/제휴문의 : 000-0000-0000, email@email.com</p>
+                        <p>개인정보보호책임자 : 김개인(asdf@email.com)</p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <h3><a href="tel:1661-0000" class="tel">1661-0000</a></h3>
+                    <ul>
+                        <li><span>평일</span> 10:00 - 17:00</li>
+                        <li><span>점심</span> 12:00 - 14:00</li>
+                        <li><span>휴일</span> 토/일/공휴일</li>
+                    </ul>
+                    <button class="btn-black d-block">고객만족센터 <i class="fa-solid fa-caret-right"></i></button>
+                </div>
+                <div class="col-md-2">
+                    <h3>BANK INFO</h3>
+                    <ul>
+                        <li><span>우리은행</span> 100-1111-1111</li>
+                        <li><span>국민은행</span> 001-1111-1554</li>
+                        <li><span>농협</span> 121-111-1111</li>
+                        <li>(주)비비드</li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h3>SHOP MENU</h3>
+                    <ul>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">회원정책</a></li>
+                        <li><a href="#">전국매장</a></li>
+                        <li><a href="#">기업회원</a></li>
+                        <li><a href="#">제휴문의</a></li>
+                    </ul>
+                    <span class="sns"><i class="fa-brands fa-instagram"></i></span>
+                    <span class="sns"><i class="fa-brands fa-youtube"></i></span>
+                    <span class="sns"><i class="kakao"></i></span>
+                    <span class="sns"><i class="fa-brands fa-facebook-f"></i></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

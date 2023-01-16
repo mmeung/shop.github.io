@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIVID SHOP</title>
+    <meta name="keyword" content="검색어, 검색어">
+    <meta name="description" content="웹사이트설명">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/shop.js"></script>
+</head>
+<body>
+    <!-- top -->
+    <div class="top">
+        <div class="container relative">
+            <div class="top_notice_item">
+                <div class="slick_notice">
+                    <a href="#">첫 번째 공지사항입니다.</a><span>(2022. 11. 14)</span>
+                </div>
+                <div class="slick_notice">
+                    <a href="#">두 번째 공지사항입니다. 두 번째 공지사항입니다.</a><span>(2022. 11. 15)</span>
+                </div>
+                <div class="slick_notice">
+                    <a href="#">세 번째 공지사항입니다.</a><span>(2022. 11. 16)</span>
+                </div>
+            </div>
+            <div class="language-button absolute">
+                <span>KOR</span><i class="fa-solid fa-caret-down"></i>
+                <ul class="language-select absolute">
+                    <li data-value="KOR">KOR</li>
+                    <li data-value="ENG">ENG</li>
+                    <li data-value="JP">JP</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- /top -->
+    <header class="container">
+        <div class="row justify-content-center align-items-center">
+            <a href="./index.html" class="logo"><img src="images/logo.png" alt="shop-logo"></a>
+            <nav>
+                <ul class="gnb d-flex">
+                    <li><a href="#" class="red bold">오늘의특가</a></li>
+                    <li><a href="#" class="blue bold">신상</a></li>
+                    <li><a href="#">1+1특가</a></li>
+                    <li><a href="#">우먼</a>
+                        <div class="lnb">
+                            <a href="#">원피스/정장</a>
+                            <a href="#">상의</a>
+                            <a href="#">하의</a>
+                            <a href="#">아우터</a>
+                            <a href="#">마담의류</a>
+                            <a href="#">시즌/테마의류</a>
+                        </div>
+                    </li>
+                    <li><a href="#">맨즈</a>
+                        <div class="lnb">
+                            <a href="#">상의</a>
+                            <a href="#">하의</a>
+                            <a href="#">아우터</a>
+                            <a href="#">남성빅사이즈</a>
+                            <a href="#">남성정장</a>
+                            <a href="#">시즌/테마의류</a>
+                        </div>
+                    </li>
+                    <li><a href="#">키즈</a>
+                        <div class="lnb">
+                            <a href="#">상의</a>
+                            <a href="#">하의</a>
+                            <a href="#">아우터</a>
+                            <a href="#">키즈정장</a>
+                            <a href="#">시즌/테마의류</a>
+                        </div>
+                    </li>
+                    <li><a href="#">슈즈</a>
+                        <div class="lnb">
+                            <a href="#">여성화</a>
+                            <a href="#">남성화</a>
+                            <a href="#">운동화</a>
+                            <a href="#">슬리퍼</a>
+                            <a href="#">기능화</a>
+                        </div>
+                    </li>
+                    <li><a href="#">용품</a></li>
+                    <li><a href="#">아울렛</a></li>
+                    <li><a href="#">커뮤니티</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <a href="#" class="search"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="#" class="cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span>0</span>
+                </a>
+                <a href="./login.html"><i class="fa-solid fa-user"></i></a>
+            </nav>
+        </div>
+        <div class="searchbox">
+            <div class="closebox">
+                <a href="#" class="close"><i class="fa-solid fa-xmark"></i></a>
+            </div>
+            <h1>검색</h1>
+            <form name="searchform" class="searchform">
+                <input type="search" name="search" id="search">
+                <button type="submit" class="btn-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            <div class="hash">
+                <h2>인기 검색어</h2>
+                <span>조끼</span>
+                <span>기모</span>
+                <span>부츠컷</span>
+                <span>바람막이</span>
+                <span>모자</span>
+                <span>잘나가는상품</span>
+                <span>아아스페더</span>
+            </div>
+            <div class="color">
+                <h2>인기 컬러</h2>
+                <div class="d-flex flex-flow text-center">
+                    <div class="col-2">
+                        <span class="black" data-color="블랙"></span><p>블랙</p>
+                    </div>
+                    <div class="col-2">
+                        <span class="white" data-color="화이트"></span><p>화이트</p>
+                    </div>
+                    <div class="col-2">
+                        <span class="gray" data-color="그레이"></span><p>그레이</p>
+                    </div>
+                    <div class="col-2">
+                        <span class="navy" data-color="네이비"></span><p>네이비</p>
+                    </div>
+                    <div class="col-2">
+                        <span class="pink" data-color="핑크"></span><p>핑크</p>
+                    </div>
+                    <div class="col-2">
+                        <span class="yellow" data-color="옐로우"></span><p>옐로우</p>
+                    </div>
+                    <div class="col-2">
+                        <span class="cblue" data-color="블루"></span><p>블루</p>
+                    </div>
+                    <div class="col-2">
+                        <span class="green" data-color="그린"></span><p>그린</p>
+                    </div>
+                    <div class="col-2">
+                        <span class="beige" data-color="베이지"></span><p>베이지</p>
+                    </div>
+                    <div class="col-2">
+                        <span class="orange" data-color="오렌지"></span><p>오렌지</p>
+                    </div>
+                    <div class="col-2">
+                        <span class="cred" data-color="레드"></span><p>레드</p>
+                    </div>
+                    <div class="col-2">
+                        <span class="purple" data-color="퍼플"></span><p>퍼플</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- / header -->
+
+    <section class="container detail mt-5">
+        <div class="row">
+            <div class="col-lg-7">
+                <img src="./images/cloth.png" alt="#" class="object-cover">
+            </div>
+            <div class="col-lg-5 goods-info">
+                <h1>프롬 라인 패딩자켓</h1>
+                <div class="box">
+                    <a href="javascript:void(0)" class="j">더블특가</a>
+                    <a href="javascript:void(0)" class="n">신상</a>
+                </div>
+                <div class="d-flex justify-content-between add">
+                    <!-- <p>XA533df</p>
+                    <a href="#" class="btn-example"><span>+</span>추가 혜택</a> -->
+                </div>
+                <form action="" id="g-form" method="post">
+                    <ul class="goods-info-option">
+                        <li>
+                            <label>판매가</label>
+                            <span><del>160,000원</del> <strong>124,000원</strong></span>
+                        </li>
+                        <li>
+                            <label>포인트</label>
+                            <span>1% ~ <strong>최대 10%</strong></span>
+                        </li>
+                        <li>
+                            <label>사이즈</label>
+                            <select id="size">
+                                <option value="">사이즈 선택</option>
+                                <option value="XS">XS(33~44)</option>
+                                <option value="S">S(44~55)</option>
+                                <option value="M">M(55~66)</option>
+                                <option value="L">L(66~77)</option>
+                                <option value="XL">XL(77~)</option>
+                            </select>
+                        </li>
+                        <li class="colors">
+                            <label>색상</label>
+                            <input type="radio" name="color" value="white" id="white"><label for="white" class="select white"><span>white</span></label>
+                            <input type="radio" name="color" value="black" id="black"><label for="black" class="select black"><span>black</span></label>
+                            <input type="radio" name="color" value="gray" id="gray"><label for="gray" class="select gray"><span>gray</span></label>
+                            <input type="radio" name="color" value="navy" id="navy"><label for="navy" class="select navy"><span>navy</span></label>
+                            <input type="radio" name="color" value="blue" id="blue"><label for="blue" class="select cblue"><span>blue</span></label>
+                            <input type="radio" name="color" value="purple" id="purple"><label for="purple" class="select purple"><span>purple</span></label>
+                            <input type="radio" name="color" value="pink" id="pink"><label for="pink" class="select pink"><span>pink</span></label>
+                            <input type="radio" name="color" value="yellow" id="yellow"><label for="yellow" class="select yellow"><span>yellow</span></label>
+                        </li>
+                        <li class="end-opt">
+                            <label>추가 상품</label>
+                            <select id="add">
+                                <option value="">추가 상품 선택</option>
+                                <option value="구두" data-add="50000">구두(+50,000)</option>
+                                <option value="모자" data-add="30000">모자(+30,000)</option>
+                                <option value="목걸이" data-add="20000">목걸이(+20,000)</option>
+                                <option value="반지" data-add="10000">반지(+10,000)</option>
+                            </select>
+                        </li>
+                        <li class="li-total">
+                            <label>총 금액</label>
+                            <div class="text-right">
+                                <div id="totals"></div>
+                                <p><strong class="result">0</strong>원</p>
+                            </div>
+                        </li>
+                        <li class="flex-wrap">
+                            <div class="col2">
+                                <button class="wish d-block" type="button">
+                                    <svg version="1.1" id="wish-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                    x="0px" y="0px" viewBox="0 0 60 50" style="enable-background:new 0 0 60 50;" xml:space="preserve">
+                                    <g stroke="black" stroke-width="1">
+                                        <path d="M41,5.6c0.7,0,1.3,0.1,2,0.2c5.8,1,10,5.9,10,11.8v0.6c0,3.5-1.5,6.9-4,9.2L31.3,43.9c-0.4,0.3-0.8,0.5-1.3,0.5
+                                            s-1-0.2-1.3-0.5L11,27.4c-2.5-2.4-4-5.7-4-9.2v-0.6c0-5.9,4.2-10.8,10-11.8c0.6-0.1,1.3-0.2,2-0.2c3.1,0,6.2,1.3,8.5,3.5l1.2,1.2
+                                            c0.4,0.4,0.9,0.6,1.4,0.6s1-0.2,1.4-0.6l1.2-1.2C34.8,6.9,37.8,5.6,41,5.6 M41,3.6c-3.7,0-7.2,1.5-9.9,4.1L30,8.9l-1.2-1.2
+                                            c-2.6-2.6-6.2-4.1-9.9-4.1c-0.8,0-1.5,0.1-2.3,0.2C9.9,4.9,5,10.8,5,17.6v0.6c0,4.1,1.7,7.9,4.6,10.7l17.6,16.5
+                                            C28,46,29,46.4,30,46.4s2-0.4,2.7-1.1l17.6-16.5c3-2.8,4.6-6.6,4.6-10.7v-0.6c0-6.8-4.9-12.6-11.7-13.8C42.6,3.7,41.8,3.6,41,3.6
+                                            L41,3.6z"/>
+                                    </g>
+                                    </svg>
+                                    위시리스트
+                                </button>
+                            </div>
+                            <div class="col2">
+                                <button class="cart d-block" type="button">
+                                    <svg version="1.1" id="cart-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                    x="0px" y="0px" viewBox="0 0 52.3 45.5" style="enable-background:new 0 0 52.3 45.5;" xml:space="preserve">
+                                    <g stroke="black" stroke-width="1">
+                                        <path d="M7.2,2.4C8.3,2.4,9.4,3,9.8,4c0.3,0.7,1,1.1,1.8,1.1h36c0.5,0,0.9,0.2,1.2,0.6c0.3,0.4,0.4,0.8,0.3,1.3l-3.6,13.3
+                                            c-0.5,1.9-2.2,3.2-4.2,3.2H16.1c-0.6,0-1.2,0.3-1.5,0.7c-0.4,0.5-0.5,1.1-0.4,1.6l0.5,2.5c0.4,1.9,2.1,3.3,4,3.3h25.2
+                                            c0.1,0,0.1,0,0.1,0.1c0,0.1,0,0.1-0.1,0.1H18.6c-2.1,0-3.8-1.5-4.2-3.5L9.9,4.8C9.6,3.5,8.5,2.6,7.2,2.6h-4c-0.1,0-0.1,0-0.1-0.1
+                                            s0-0.1,0.1-0.1H7.2 M41.8,38.8c1.2,0,2.2,1,2.2,2.2s-1,2.2-2.2,2.2s-2.2-1-2.2-2.2S40.5,38.8,41.8,38.8 M16.5,38.8
+                                            c1.2,0,2.2,1,2.2,2.2s-1,2.2-2.2,2.2s-2.2-1-2.2-2.2S15.3,38.8,16.5,38.8 M7.2,0.4h-4c-1.2,0-2.1,0.9-2.1,2.1
+                                            c0,1.2,0.9,2.1,2.1,2.1h4c0.3,0,0.6,0.2,0.7,0.6l4.5,23.7c0.6,3,3.2,5.1,6.2,5.1h25.2C45,34,46,33,46,31.9c0-1.2-0.9-2.1-2.1-2.1
+                                            H18.6c-1,0-1.9-0.7-2.1-1.7l-0.5-2.5h25.3c2.8,0,5.3-1.9,6.1-4.7L51,7.6c0.6-2.2-1.1-4.4-3.4-4.4h-36C10.9,1.5,9.2,0.4,7.2,0.4
+                                            L7.2,0.4z M41.8,36.8c-2.3,0-4.2,1.9-4.2,4.2s1.9,4.2,4.2,4.2S46,43.3,46,41S44.1,36.8,41.8,36.8L41.8,36.8z M16.5,36.8
+                                            c-2.3,0-4.2,1.9-4.2,4.2s1.9,4.2,4.2,4.2s4.2-1.9,4.2-4.2S18.9,36.8,16.5,36.8L16.5,36.8z"/>
+                                    </g>
+                                    </svg>
+                                    장바구니
+                                </button>
+                            </div>
+                            <div class="col-12">
+                                <button class="order" type="button">구매하기</button>
+                            </div>
+                        </li>
+                    </ul>
+                    <input type="hidden" id="goods" value="124000">
+                    <input type="hidden" id="total">
+                    <input type="hidden" id="result">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="center-banner my-5">
+        <div class="container">
+            <div class="row">
+                <div class="col6">
+                    <img src="./images/banner01.jpg" alt="banner01">
+                </div>
+                <div class="col6">
+                    <img src="./images/banner02.jpg" alt="banner02">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container detail-desc">
+        <ul class="desc-nav d-flex">
+            <li class="act" data-list="desc">상품설명</li>
+            <li data-list="reviews">고객리뷰</li>
+            <li data-list="delivery">교환/배송 정보</li>
+        </ul>
+        <div class="desc-content">
+            <div class="act" id="desc">
+                <p class="text-center">
+                    구매전 필독해주세요!
+    
+    
+    
+                -
+                
+                
+                
+                모델 촬영시 조명과 자연광으로 인해
+                
+                실제 옷색상과 차이가 있을 수 있습니다.
+                
+                
+                
+                하단 상세컷이 실제 색상과 가장 가까우니
+                
+                참고 부탁드립니다!
+                
+                
+                
+                모델이 착용한 컬러는 블랙, 아이보리입니다.
+                
+                
+                
+                -
+                사이즈 다양해서 너무 좋아요
+                이런 따듯하면서 편한 밴딩팬츠는
+                겨울에 쟁여둬야 해요
+                소재는 코튼97 스판3 이고요
+                신축 엄청 좋고 엄청나게 따듯해요
+                안감 기모 한가득 들어있어서 다리 넣는 순간 세상 따듯합니다.
+                약간 오버해서 말하면 겨울에 입으면 더울 정도에요.ㅎㅎ
+                허리밴딩으로 배 눌러주며 뱃살 정리 잘 해주고요
+                힙골반 붙으면서 밑단까지 9.5-10부 정도로 떨어져요
+                넉넉한 슬림핏이라 종아리 조임없이 단정하게 떨어집니다.
+                입을 때 밴딩이라 허리 슬쩍 가려주면 더 좋아요
+                가려주기만 하면 오비바지 입은것처럼 깔끔해보입니다.
+                밴딩바지 입은것처럼 안보이고요.
+                기본컬러에 사이즈도 다양해서
+                누구나 체형 구애없이 가능해서 좋아요.
+                좋은건 같이 입어야 좋잖아요. 
+                총 네사이즈 나오고요
+                스몰은 55 미듐은 66 라지는 77 엑스라지는 88 까지 가능하세요
+                </p>
+                <!--https://loveparis.net/product/made%EC%A3%BC%EB%AC%B8%EC%A0%91%EC%88%9830000%EC%9B%90-%ED%95%A0%EC%9D%B8%ED%94%84%EB%A1%AC-%EB%9D%BC%EC%9D%B8-%ED%8C%A8%EB%94%A9%EC%9E%90%EC%BC%93/14830/category/852/display/1/ -->
+            </div>
+            <div id="reviews">
+                <div class="score-board d-flex align-items-center mb-5">
+                    <div class="score-list text-center">
+                        <div class="mb-2">
+                            <span class="score bold">4.9</span>
+                        </div>
+                        <div class="stars mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="values bold">
+                            <span class="value-text">리뷰</span>
+                            <span class="value">954</span>
+                        </div>
+                    </div>
+                    <ul class="score-stars">
+                        <li class="score-stars-5 d-flex align-items-center">
+                            <div class="score-text">5 Stars</div>
+                            <div class="score-bar">
+                                <div class="score-bar-gage" style="width: 85.5%"></div>
+                            </div>
+                            <div class="score-num bold">(816)</div>
+                        </li>
+                        <li class="score-stars-4 d-flex align-items-center">
+                            <div class="score-text">4 Stars</div>
+                            <div class="score-bar">
+                                <div class="score-bar-gage" style="width: 9.95%"></div>
+                            </div>
+                            <div class="score-num bold">(95)</div>
+                        </li>
+                        <li class="score-stars-3 d-flex align-items-center">
+                            <div class="score-text">3 Stars</div>
+                            <div class="score-bar">
+                                <div class="score-bar-gage" style="width: 4.55%"></div>
+                            </div>
+                            <div class="score-num bold">(43)</div>
+                        </li>
+                        <li class="score-stars-2 d-flex align-items-center">
+                            <div class="score-text">2 Stars</div>
+                            <div class="score-bar">
+                                <div class="score-bar-gage" style="width: 0%"></div>
+                            </div>
+                            <div class="score-num bold">(0)</div>
+                        </li>
+                        <li class="score-stars-1 d-flex align-items-center">
+                            <div class="score-text">1 Stars</div>
+                            <div class="score-bar">
+                                <div class="score-bar-gage" style="width: 0%"></div>
+                            </div>
+                            <div class="score-num bold">(0)</div>
+                        </li>
+                    </ul>
+                    <div class="photo-review text-center">
+                        <img src="./images/goods/s-0067.jpg" alt="67">
+                        <img src="./images/goods/s-0068.jpg" alt="68">
+                        <img src="./images/goods/s-0069.jpg" alt="69">
+                        <img src="./images/goods/s-0085.jpg" alt="85">
+                        <img src="./images/goods/s-0086.jpg" alt="86">
+                        <img src="./images/goods/s-0087.jpg" alt="87">
+                        <p class="photo-review-text bold">포토리뷰 모아보기</p>
+                    </div>
+                </div>
+                <table>
+                    <colgroup>
+                        <col width="80%">
+                        <col width="20%">
+                    </colgroup>
+                    <tbody>
+                        <!-- loop -->
+                        <tr>
+                            <td>
+                                <div class="writes">
+                                    <span>홍길*</span>
+                                    <span>2022.12.18</span>
+                                    <span class="start">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+                                </div>
+                                <p>부드럽고 좋아요. 여러 색으로 다양하게 구매하고 싶어요. </p>
+                            </td>
+                            <td class="good-comment text-right">
+                                <span><i class="fa-solid fa-thumbs-up"></i> 15</span>
+                                <span><i class="fa-solid fa-comment-dots"></i> 30</span>
+                            </td>
+                        </tr>
+                        <!-- / loop -->
+                        <tr>
+                            <td>
+                                <div class="writes">
+                                    <span>홍길*</span>
+                                    <span>2022.12.18</span>
+                                    <span class="start">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+                                </div>
+                                <div>
+                                    <div class="writes-photo">
+                                        <img src="./images/goods/s-0146.jpg " alt="146">
+                                    </div>
+                                    <p>부드럽고 좋아요. 여러 색으로 다양하게 구매하고 싶어요. </p>
+                                </div>
+                            </td>
+                            <td class="good-comment text-right">
+                                <span><i class="fa-solid fa-thumbs-up"></i> 15</span>
+                                <span><i class="fa-solid fa-comment-dots"></i> 30</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="writes">
+                                    <span>홍길*</span>
+                                    <span>2022.12.18</span>
+                                    <span class="start">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+                                </div>
+                                <p>부드럽고 좋아요. 여러 색으로 다양하게 구매하고 싶어요. </p>
+                            </td>
+                            <td class="good-comment text-right">
+                                <span><i class="fa-solid fa-thumbs-up"></i> 15</span>
+                                <span><i class="fa-solid fa-comment-dots"></i> 30</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="writes">
+                                    <span>홍길*</span>
+                                    <span>2022.12.18</span>
+                                    <span class="start">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+                                </div>
+                                <p>부드럽고 좋아요. 여러 색으로 다양하게 구매하고 싶어요. </p>
+                            </td>
+                            <td class="good-comment text-right">
+                                <span><i class="fa-solid fa-thumbs-up"></i> 15</span>
+                                <span><i class="fa-solid fa-comment-dots"></i> 30</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="writes">
+                                    <span>홍길*</span>
+                                    <span>2022.12.18</span>
+                                    <span class="start">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+                                </div>
+                                <div>
+                                    <div class="writes-photo">
+                                        <img src="./images/goods/s-0152.jpg " alt="146">
+                                        <img src="./images/goods/s-0153.jpg " alt="146">
+                                    </div>
+                                    <p>부드럽고 좋아요. 여러 색으로 다양하게 구매하고 싶어요. </p>
+                                </div>
+                            </td>
+                            <td class="good-comment text-right">
+                                <span><i class="fa-solid fa-thumbs-up"></i> 15</span>
+                                <span><i class="fa-solid fa-comment-dots"></i> 30</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="delivery" class="text-center">
+                <img src="./images/check.jpg" alt="check">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- service -->
+    <section class="service container">
+        <div class="row">
+            <a href="#" class="col-lg-4 col-md-6 d-block">
+                <img src="images/offline.png" alt="offline">
+                <h2 class="text-center">OFF-LINE</h2>
+                <p class="text-center">전국 오프라인 매장을 확인하세요.</p>
+            </a>
+            <a href="#" class="col-lg-4 col-md-6 d-block">
+                <img src="images/review.png" alt="review">
+                <h2 class="text-center">고객리얼리뷰</h2>
+                <p class="text-center">리얼 고객 리뷰를 볼 수 있습니다.</p>
+            </a>
+            <a href="#" class="col-lg-4 col-md-6 d-block">
+                <img src="images/building.png" alt="office">
+                <h2 class="text-center">회사소개</h2>
+                <p class="text-center">우리 회사를 소개합니다.</p>
+            </a>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="f-menu">
+                        <a href="#" class="f-logo"><img src="./images/logo.png" alt="logo"></a>
+                        <a href="#">브랜드 스토리</a>
+                        <span></span>
+                        <a href="#">회사소개</a>
+                        <span></span>
+                        <a href="#">이용약관</a>
+                        <span></span>
+                        <a href="#">개인정보처리방침</a>
+                        <span></span>
+                        <a href="#">고객센터</a>
+                    </div>
+                    <div class="copy">
+                        <p>사업자명 : (주)VIVID <span></span> 대표자 : 홍길동 <span></span> 팩스번호 031-0000-0000</p>
+                        <p>주소 : 경기도 김포시 김포한강로 4길(장항동) 이젠타워 10층 1004호</p>
+                        <p>사업자 등록번호 000-0000-0000 <span></span> 통산판매업신고 : 20122-김포-12299</p>
+                        <p>제휴/제휴문의 : 000-0000-0000, email@email.com</p>
+                        <p>개인정보보호책임자 : 김개인(asdf@email.com)</p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <h3><a href="tel:1661-0000" class="tel">1661-0000</a></h3>
+                    <ul>
+                        <li><span>평일</span> 10:00 - 17:00</li>
+                        <li><span>점심</span> 12:00 - 14:00</li>
+                        <li><span>휴일</span> 토/일/공휴일</li>
+                    </ul>
+                    <button class="btn-black d-block">고객만족센터 <i class="fa-solid fa-caret-right"></i></button>
+                </div>
+                <div class="col-md-2">
+                    <h3>BANK INFO</h3>
+                    <ul>
+                        <li><span>우리은행</span> 100-1111-1111</li>
+                        <li><span>국민은행</span> 001-1111-1554</li>
+                        <li><span>농협</span> 121-111-1111</li>
+                        <li>(주)비비드</li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h3>SHOP MENU</h3>
+                    <ul>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">회원정책</a></li>
+                        <li><a href="#">전국매장</a></li>
+                        <li><a href="#">기업회원</a></li>
+                        <li><a href="#">제휴문의</a></li>
+                    </ul>
+                    <span class="sns"><i class="fa-brands fa-instagram"></i></span>
+                    <span class="sns"><i class="fa-brands fa-youtube"></i></span>
+                    <span class="sns"><i class="kakao"></i></span>
+                    <span class="sns"><i class="fa-brands fa-facebook-f"></i></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
